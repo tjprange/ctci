@@ -1,3 +1,5 @@
+// will determine if a paldinrone exists in a permutation of string
+
 const isPalindrone = (s) => {
   let charMap = new Map(); // wil hold character and frequency
   s = s.toLowerCase();
