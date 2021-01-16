@@ -33,7 +33,6 @@ const isPalindrone = (s) => {
       numOdds++;
     }
   }
-
   if (numOdds > 1) {
     return false;
   }

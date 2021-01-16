@@ -16,7 +16,7 @@ var MyCircularQueue = function (k) {
  */
 MyCircularQueue.prototype.enQueue = function (value) {
   if (this.isFull()) {
-    console.log("false");
+    console.log('false');
     return false;
   }
   index = this.head + this.size; // next available index
@@ -80,7 +80,7 @@ MyCircularQueue.prototype.isEmpty = function () {
   if (this.size <= 0) {
     // reset size
     this.size = 0;
-    console.log("empty");
+    console.log('empty');
     return true;
   }
   return false;
@@ -92,7 +92,7 @@ MyCircularQueue.prototype.isEmpty = function () {
  */
 MyCircularQueue.prototype.isFull = function () {
   if (this.size >= this.capacity) {
-    console.log("full");
+    console.log('full');
     return true;
   }
   return false;
