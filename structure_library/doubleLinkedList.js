@@ -1,3 +1,7 @@
+/**
+ * Node definition.
+ */
+
 class Node {
   constructor(val) {
     this.val = val;
@@ -7,13 +11,9 @@ class Node {
 }
 
 /**
- * Initialize your data structure here.
+ * Initialize data structure here.
  */
-// var MyLinkedList = function(){
-//     this.head = null;
-//     this.tail = null;
-//     this.size = 0;
-// };
+
 class LinkedList {
   constructor() {
     this.head = null;
@@ -152,10 +152,9 @@ class LinkedList {
     newNode.prev = current.prev;
     current.prev.next = newNode;
     current.prev = newNode;
-
-    //console.log('val:', current.val);
   }
 
+  // prints linked list head -> tail
   printList() {
     let current = this.head;
     while (current) {
@@ -164,6 +163,7 @@ class LinkedList {
     }
   }
 
+  // prints linked list tail -> head
   printListReverse() {
     let current = this.tail;
     while (current) {
@@ -173,19 +173,6 @@ class LinkedList {
   }
 }
 
-var linkedList = new LinkedList();
-linkedList.addAtHead(3);
-linkedList.addAtHead(2);
-linkedList.addAtHead(1);
-linkedList.addAtTail(4);
+var doubleLinkedList = new LinkedList();
 
-//linkedList.addAtIndex(4, 100);
-linkedList.addAtIndex(4, 10);
-linkedList.addAtTail(12323);
-//linkedList.removeNthFromEnd(2);
-linkedList.printList();
-console.log("=========");
-linkedList.printListReverse();
-//console.log('size:', linkedList.size);
-
-// console.log(linkedList.tail);
+module.exports = doubleLinkedList;
