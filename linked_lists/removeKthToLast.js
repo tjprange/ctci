@@ -1,4 +1,4 @@
-let MyLinkedList = require("../structure_library/linkedList");
+let MyLinkedList = require('../structure_library/linkedList');
 let linkedList = MyLinkedList;
 
 var Node = function (val) {
@@ -35,5 +35,5 @@ function removeKthToLast(head, k) {
   return dummy.next; // in event first node
 }
 
-linkedList.head = removeKthToLast(linkedList.head, 1);
+linkedList.head = removeKthToLast(linkedList.head, 2);
 linkedList.printList();
